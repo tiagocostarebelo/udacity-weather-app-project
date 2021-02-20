@@ -1,6 +1,6 @@
 //WEB API 
 const baseURL = 'https://api.openweathermap.org/data/2.5/weather?zip=';
-const apiKey = '&units=metric&appid=bf51b781f480f615c05432f57cff34bd'
+const apiKey = '&units=metric&appid=...'
 
 //Date
 let today = new Date();
