@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <title>Weather Journal App</title>
+</head>
+<body>
+    <div class="app_container">
+        <div class="app_wrapper">
+            <header class="app_header">
+                <div class="inputs">
+                    <input id="zip" class="code" name="zip" type="number" pattern="[0-9]*" placeholder="Insert your Zip Code (US only)" required>
+                    <input id="feelings" class="feel" type="text" placeholder="How do you feel today?" required>
+                </div>
+                <div class="button_holder">
+                    <button id="generate" class="button"><i class="fas fa-search-location"></i></button>
+                </div>
+            </header>
+            <main class="app_main">
+                <div class="location">
+                    <div class="city"></div>
+                    <div class="country"></div>
+                </div>
+                    
+                <div class="weather_info">
+                    <div id="title" class="temperature">Temperature</div>
+                    <div class="temp"></div>
+                    <div id="title" class="feelslike">Thermical Feeling</div>
+                    <div class="temp_feels"></div>                 
+                </div>
+                <div class="details">
+                    <div class="date"></div>
+                    <div class="user_input"></div>
+                    
+                </div>
+            </main>
+        </div>
+    </div>
+
+    
+    <script src="./js/app.js"></script>
+</body>
+</html>

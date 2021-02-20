@@ -1,0 +1,185 @@
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Variables */
+:root {
+    --base: ;
+    --details: ;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2em;
+    font-weight: 300;
+    font-family: 'Poppins', sans-serif;
+    background-image: url("../images/background.jpg");
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.app_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: linear-gradient(0deg, rgba(5,53,67,1) 0%, rgba(152,166,198,1) 100%);
+}
+
+.app_wrapper {
+    width: 350px;
+    min-height: 450px;
+    padding: 20px;
+    border: 1px solid rgba(0,0,0,0.1);
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.6);
+    
+}
+
+.app_header {
+    display: flex;
+    align-items: center;
+}
+
+#zip {
+    width: 100%;
+    max-width: 230px;
+    padding: 5px;
+    border: none;
+    outline: none;
+    background-color: rgba(255,255,255,0.3);
+    color: var(--base);
+    font-size: 0.8em;
+    transition: 0.2s ease-out;    
+}
+
+#feelings {
+    width: 100%;
+    max-width: 230px;
+    padding: 5px;
+    border: none;
+    outline: none;
+    background-color: rgba(255,255,255,0.3);
+    color: var(--base);
+    font-size: 0.8em;
+    transition: 0.2s ease-out;    
+}
+
+#zip:focus, #feeling:focus {
+    background-color: rgba(255,255,255,0.8);
+}
+
+/*Input type number remove the arrows */
+/* Chrome, Safari, Edge, Opera */
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.button {
+    padding: 8px 8px;
+    border: none;
+    outline: none;
+    background-color:rgba(255,255,255,0.3);
+    font-size: 0.8em;
+    text-transform: uppercase;
+    color: var(--base);
+    transition: 0.2s ease-out;
+}
+
+.button:hover {
+    background-color: rgba(255,255,255,0.8);
+    cursor: pointer;
+}
+
+.fa-search-location {
+    font-size: 1em;
+}
+
+.app_main {
+    display: flex;
+    /* align-items: flex-start;
+    justify-content: center; */
+    flex-direction: column;
+}
+
+.location {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+.city {
+    margin-right: 10px;
+    font-size: 1.4em;
+    font-weight: 400;
+}
+
+.country {
+    font-size: 1.4em;
+    font-weight: 600;
+}
+
+.temperature {
+    display: none;
+    font-size: 1em;
+    font-weight: 300;
+}
+
+.feelslike {
+    display:none;
+    font-size: 1em;
+    font-weight: 300;   
+}
+
+.weather_info {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    margin: 30px 0px;
+}
+
+.temp {
+    font-size: 2em;
+    font-weight: 600;
+    margin-right: 20px;
+}
+
+.temp_feels {
+    font-size: 1.6em;
+    font-weight: 300;
+    margin-right: 20px;
+}
+
+.details {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.date {
+    font-size: 1.3em;
+    font-weight: 300;
+}
+
+.user_input {
+    font-size: 1.3em;
+    font-weight: 300,
+}
+
+
+
